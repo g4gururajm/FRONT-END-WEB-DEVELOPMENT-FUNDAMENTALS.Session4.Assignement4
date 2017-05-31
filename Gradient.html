@@ -1,0 +1,122 @@
+<!-- declaration refers to a DTD-->
+<!DOCTYPE html>
+<!-- html language english -->
+<html lang="en">
+
+<!--Head element-->
+<head>
+	<!-- The <meta> tag provides metadata about the HTML and Specify the character encoding for the HTML -->
+	<meta charset="UTF-8">
+	
+	<!-- Define a description of your web page -->
+	<meta name="description" content="Free Web tutorials">
+	
+	<!--  Define keywords for search engines -->
+	<meta name="keywords" content="HTML,CSS,XML, XHTML,JavaScript">
+	
+	<!-- Define the author of a page -->
+	<meta name="author" content="Gururaj">
+	
+	<!-- Setting the viewport to make your website look good on all devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- It defines the title of the document-->
+	<title>HTML CSS</title>
+	<!--style tag starts here -->
+    <style  type="text/css">
+		/* Created demo id for div to set linearGradientMultipleColors*/
+        .demo{
+             display: inline-table;					/* Displaying the table in inline form*/
+             text-align:center;						/* setting text-align to center */
+             line-height:100px;						/* setting line height to 100px */
+             width: 100px;							/* setting width of the div to 100px */
+             height: 100px;							/* setting height of the div to 100px */
+             border-radius: 10px;					/* setting border radius to 10px */
+			 box-shadow: 10px 10px 6px grey;		/* setting box shadow to top - 10px left- 10px and 6px with gray color  */
+			 margin: 10px;							/* setting margin of div with 10px */
+        }
+		/* Creating demo-center id for div to set radialGradientMultipleColors */
+		.demo-center{
+             display: inline-table;					/* Displaying the table in inline form*/
+             text-align:center;						/* setting text-align to center */
+             line-height:100px;						/* setting line height to 100px */
+             width: 100px;							/* setting width of the div to 100px */
+             height: 100px;							/* setting height of the div to 100px */
+             border-radius: 10px;					/* setting border radius to 10px */
+             box-shadow: 10px 10px 6px grey;		/* setting box shadow to top - 10px left- 10px and 6px with gray color  */
+			 margin: 10px;							/* setting margin of div with 10px */
+        }
+		/* Creating demo-right id for div to set radialGradientMultipleColorsecllipe */
+        .demo-right{
+             display: inline-table;					/* Displaying the table in inline form*/
+             text-align:center;						/* setting text-align to center */
+             line-height:100px;						/* setting line height to 100px */
+             width: 100px;							/* setting width of the div to 100px */
+             height: 100px;							/* setting height of the div to 100px */
+             border-radius: 10px;					/* setting border radius to 10px */
+			 box-shadow: 10px 10px 6px grey;		/* setting box shadow to top - 10px left- 10px and 6px with gray color  */
+			 margin: 10px;							/* setting margin of div with 10px */
+        }
+		/* Setting mozilla keyframes for div box */
+        @-moz-keyframes Boxcircle {
+             border-radius: 10px;					/* setting border radius to 10px */			
+        }
+		/* Setting webkit keyframe for div box */
+        @-webkit-keyframes Boxcircle {
+             border-radius: 10px;					/* setting border radius to 10px */
+		}
+		/* Setting keyframe for div box */
+	    @keyframes Boxcircle {
+	    	 border-radius: 10px;					/* setting border radius to 10px */
+		}
+		/* Setting div text alignment*/
+		.center{
+			text-align:center;						/* setting div text alignmet to center*/
+		}
+		/* setting first div with linear gradient with multiple color */
+	    .linearGradientMultipleColors{
+			background: -webkit-linear-gradient(left,red, green); 		/* For webkit based browser  setting linear gradient from left red to green */
+			background: -o-linear-gradient(left, red, green); 			/* For Opera  setting linear gradient from left red to green */
+			background: -moz-linear-gradient(left, red, green); 		/* For Firefox setting linear gradient from left red to green */
+			background: linear-gradient(to right, red, green); 			/* Standard syntax setting linear gradient from left red to green */
+	    }
+		/* setting second div with radial gradient with multiple color */
+		.radialGradientMultipleColors{
+			background: -webkit-radial-gradient(circle farthest-corner at 0% 0%,red,yellow,green); 	/* Safari 5.1 to 6.0 setting circle with red yellow and green */
+			background: -o-radial-gradient(circle farthest-corner at 0% 0%,red,yellow,green); 		/* For Opera 11.6 to 12.0 setting circle with red yellow and green */
+			background: -moz-radial-gradient(circle farthest-corner at 0% 0%,red,yellow,green); 	/* For Firefox 3.6 to 15 setting circle with red yellow and green*/
+			background: radial-gradient(circle farthest-corner at 50% 0%,red,yellow,green); 		/* Standard syntax (must be last) setting circle with red yellow and green*/
+		}
+		.radialGradientMultipleColorsecllipe{
+			background: -webkit-radial-gradient(ellipse at 0% 0%,red,yellow,green); /* Safari 5.1 to 6.0 setting ecllipse with red yellow and green*/
+			background: -o-radial-gradient(ellipse at  0% 0%,red,yellow,green); /* For Opera 11.6 to 12.0 setting ecllipse with red yellow and green*/
+			background: -moz-radial-gradient(ellipse at 0% 0%,red,yellow,green); /* For Firefox 3.6 to 15 setting ecllipse with red yellow and green*/
+			background: radial-gradient(ellipse at 50% 0%,red,yellow,green); /* Standard syntax (must be last) setting ecllipse with red yellow and green*/
+		}
+	/* style tag ends here*/
+    </style>
+<!-- head tag ends here--> 
+</head>
+<!-- Body tag of doc starts here -->
+<body>
+<!-- Center tag starts here -->
+<center>
+ 
+    <!--div id="demo"> Box with using id demo and applying linearGradientmultiplecolors </div-->
+	<div class="demo linearGradientMultipleColors">
+		<b>Box</b>
+	</div>
+	<!--div id="demo-center"> Box with using id demo and applying radialGradientMultipleColors </div-->
+	<div class="demo-center radialGradientMultipleColors">
+		<b>Box</b>
+	</div>
+	<!--div id="demo-right"> Box with using id demo and applying radialGradientMultipleColorsecllipe </div-->
+	<div class="demo-right radialGradientMultipleColorsecllipe">
+		<b>Box</b>
+	</div>
+<!-- center tag ends here -->
+<center>
+<!-- body tag ends here-->
+</body>
+<!-- html tag ends here-->
+</html>
